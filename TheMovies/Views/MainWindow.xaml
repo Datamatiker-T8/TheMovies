@@ -16,7 +16,7 @@
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="130"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
@@ -25,9 +25,9 @@
         </Grid>
 
         <StackPanel Grid.Row="2" Background="#FF515151">
-            <Button x:Name="Oversigt" Height="80" Content="Oversigt" Click="Oversigt_Click" Style="{DynamicResource ButtonTheme}"></Button>
-            <Button Height="80" Content="Udvidelse 1" Style="{DynamicResource ButtonTheme}" ></Button>
-            <Button Height="80" Content="Udvidelse 2" Style="{DynamicResource ButtonTheme}"></Button>
+            <Button x:Name="Oversigt" Height="80" Content="Film" Click="Oversigt_Click" Style="{DynamicResource ButtonTheme}"></Button>
+            <Button x:Name="Forestillinger" Height="80" Content="Forestillinger" Style="{DynamicResource ButtonTheme}" Click="Forestillinger_Click" ></Button>
+            <Button x:Name="Booking" Height="80" Content="Booking" Style="{DynamicResource ButtonTheme}"></Button>
         </StackPanel>
 
         <Frame x:Name="FrameWindow" Grid.Row="2" Grid.Column="2" NavigationUIVisibility="Hidden" Source="startWindow.xaml" VerticalAlignment="Stretch"/>

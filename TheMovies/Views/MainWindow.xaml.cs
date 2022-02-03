@@ -27,7 +27,12 @@ namespace TheMovies
 
         private void Oversigt_Click(object sender, RoutedEventArgs e)
         {
+            FrameWindow.Source = new Uri("OversigtWindow.xaml", UriKind.Relative);
+        }
 
+        private void Forestillinger_Click(object sender, RoutedEventArgs e)
+        {
+            FrameWindow.Source = new Uri("ForestillingerWindow.xaml", UriKind.Relative);
         }
     }
 }
