@@ -5,8 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TheMovies"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="TheMovies - Bookingsystem" Height="720" Width="1280"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
     <Grid>
 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.ColumnSpan="2" Background="#ffffff">
+            <Image Height="70" Width="350" Source="/Views/logo.png"/>
+        </Grid>
+
+        <StackPanel Grid.Row="2" Background="#DEDEDE">
+            <Button x:Name="Oversigt" Height="80" Content="Oversigt" Click="Oversigt_Click"></Button>
+            <Button Height="80" Content="Udvidelse 1"></Button>
+            <Button Height="80" Content="Udvidelse 2"></Button>
+        </StackPanel>
+
+        <Frame x:Name="FrameWindow" Grid.Row="2" Grid.Column="2" NavigationUIVisibility="Hidden" Source="startWindow.xaml" VerticalAlignment="Stretch"/>
     </Grid>
 </Window>

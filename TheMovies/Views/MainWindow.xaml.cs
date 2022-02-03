@@ -24,5 +24,10 @@ namespace TheMovies
         {
             InitializeComponent();
         }
+
+        private void Oversigt_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
