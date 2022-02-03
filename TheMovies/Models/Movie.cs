@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TheMovies.Models
 {
-    internal class Movie
+    public class Movie
     {
     }
 }
