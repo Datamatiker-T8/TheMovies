@@ -8,5 +8,13 @@ namespace TheMovies.Models
 {
     public class City
     {
+        private string city;
+
+		public string City
+		{
+			get { return city;}
+			set { city = value;}
+		}
+
     }
 }

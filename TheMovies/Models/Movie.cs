@@ -8,5 +8,13 @@ namespace TheMovies.Models
 {
     public class Movie
     {
+        private string genre;
+
+	public string Genre
+	{
+		get { return genre;}
+		set { genre = value;}
+	}
+
     }
 }
