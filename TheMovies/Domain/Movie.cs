@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TheMovies.Presistence;
 
-namespace TheMovies.Models
+namespace TheMovies.Domain
 {
     public class Movie : IDomainItem
     {
@@ -45,29 +45,18 @@ namespace TheMovies.Models
 			get { return genre;}
 			set { genre = value;}
 		}
-		public Movie(
-			string title, 
-			string genre, 
-			TimeSpan duration, 
-			string instructor, 
-			DateTime premierDate)
+		public Movie(string title, string genre, TimeSpan duration, string instructor, DateTime premierDate)
         {
 			this.title = title;
 			this.genre = genre;
 			this.duration = duration;
 			this.instructor = instructor;
 			this.premierDate = premierDate;
-
-
 		}
-		public void Parse(string line)
-        {
-            
-        }
 
 		public string Format()
         {
-            return $"";
+            return $"{title},{genre},{duration},{instructor},{premierDate}";
         }
 
     }

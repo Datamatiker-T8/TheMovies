@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TheMovies.Models
+namespace TheMovies.Domain
 {
     public class City
     {

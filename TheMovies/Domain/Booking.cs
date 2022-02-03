@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TheMovies.Models
+namespace TheMovies.Domain
 {
     public class Booking
     {
@@ -22,9 +22,10 @@ namespace TheMovies.Models
             get { return bookingPhoneNumber; }
             set { bookingPhoneNumber = value; }
         }
-        public Booking ()
+        public Booking (string bookingEmail, int bookingPhoneNumber)
         {
-
+            this.BookingPhoneNumber = bookingPhoneNumber;
+            this.bookingEmail = bookingEmail;
         }
 
 
