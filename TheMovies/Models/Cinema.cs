@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace TheMovies.Models
 {
-    public class City
+    public class Cinema
     {
         private string name;
 
-		public string Name
-		{
-			get { return name;}
-			set { name = value;}
-		}
-		public void City(string Name)
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+        public void Cinema(string Name)
         {
             this.Name = Name;
         }

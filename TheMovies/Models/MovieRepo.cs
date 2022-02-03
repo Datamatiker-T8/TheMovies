@@ -8,5 +8,14 @@ namespace TheMovies.Models
 {
     public class MovieRepo
     {
+
+        public void Save()
+        {
+
+        }
+        public void Load()
+        {
+
+        }
     }
 }
