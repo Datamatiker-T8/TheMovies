@@ -34,5 +34,10 @@ namespace TheMovies
         {
             FrameWindow.Source = new Uri("ForestillingerWindow.xaml", UriKind.Relative);
         }
+
+        private void Image_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            FrameWindow.Source = new Uri("StartWindow.xaml", UriKind.Relative);
+        }
     }
 }
