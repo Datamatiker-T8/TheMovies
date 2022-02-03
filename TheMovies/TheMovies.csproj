@@ -6,4 +6,18 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Views\Forside.png" />
+    <None Remove="Views\Images\popcorn.jpg" />
+    <None Remove="Views\logo.png" />
+    <None Remove="Views\popcorn.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Views\Forside.png" />
+    <Resource Include="Views\Images\popcorn.jpg" />
+    <Resource Include="Views\logo.png" />
+    <Resource Include="Views\popcorn.jpg" />
+  </ItemGroup>
+
 </Project>
