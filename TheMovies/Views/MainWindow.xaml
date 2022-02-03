@@ -24,10 +24,10 @@
             <Image Height="70" Width="350" Source="/Views/logo.png"/>
         </Grid>
 
-        <StackPanel Grid.Row="2" Background="#DEDEDE">
-            <Button x:Name="Oversigt" Height="80" Content="Oversigt" Click="Oversigt_Click"></Button>
-            <Button Height="80" Content="Udvidelse 1"></Button>
-            <Button Height="80" Content="Udvidelse 2"></Button>
+        <StackPanel Grid.Row="2" Background="#FF515151">
+            <Button x:Name="Oversigt" Height="80" Content="Oversigt" Click="Oversigt_Click" Style="{DynamicResource ButtonTheme}"></Button>
+            <Button Height="80" Content="Udvidelse 1" Style="{DynamicResource ButtonTheme}" ></Button>
+            <Button Height="80" Content="Udvidelse 2" Style="{DynamicResource ButtonTheme}"></Button>
         </StackPanel>
 
         <Frame x:Name="FrameWindow" Grid.Row="2" Grid.Column="2" NavigationUIVisibility="Hidden" Source="startWindow.xaml" VerticalAlignment="Stretch"/>
