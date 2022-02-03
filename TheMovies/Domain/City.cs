@@ -15,9 +15,10 @@ namespace TheMovies.Models
 			get { return name;}
 			set { name = value;}
 		}
-		public void City(string Name)
+		public City(string Name)
         {
-            this.Name = Name;
+            this.name = Name;
+            
         }
 
     }

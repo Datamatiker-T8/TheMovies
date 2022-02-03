@@ -8,23 +8,31 @@ namespace TheMovies.ViewModels
 {
     public class MainViewModel
     {
-        public void AddMovie(Movie pr)
+        public void AddMovie(Movie me)
+        {
+            
+        }
+        public void RemoveMovie(Movie me)
         {
             
         }
 
-        public void AddCity(City tn)
+        public void AddCity(City cy)
+        {
+            
+        }
+        public void RemoveCity(City cy)
         {
             
         }
 
-        public void AddGenre (Genre pr)
+        public void AddGenre (Genre ge)
         {
-            Genre.Remove(pr);//fjerner fra liste (ikke lavet endnu)
+            Genre.Remove(ge);//fjerner fra liste (ikke lavet endnu)
             pr.Delete(); //fjerner fra filen inden i MoviesViewModel
         }
       
-        public void RemoveGenre(Genre tn)
+        public void RemoveGenre(Genre ge)
         {
             
         }

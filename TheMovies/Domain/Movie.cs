@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TheMovies.Presistence;
 
 namespace TheMovies.Models
 {
-    public class Movie
+    public class Movie : IDomainItem
     {
         private string title;
 
@@ -15,13 +16,7 @@ namespace TheMovies.Models
 			get { return title;}
 			set { title = value;}
 		}
-		private int lenght;
-
-		public int Lenght
-		{
-			get { return lenght;}
-			set { lenght = value;}
-		}
+		
 		private string instructor;
 
 		public string Instructor
@@ -29,9 +24,9 @@ namespace TheMovies.Models
 			get { return instructor;}
 			set { instructor = value;}
 		}
-		private DateTime duration;
+		private TimeSpan duration;//String hourMinute = DateTime.Now.ToString("HH:mm"); burde virke, til at vise længden af filmen
 
-		public DateTime Duration
+		public TimeSpan Duration
 		{
 			get { return duration;}
 			set { duration = value;}
@@ -50,15 +45,24 @@ namespace TheMovies.Models
 			get { return genre;}
 			set { genre = value;}
 		}
+		public Movie(
+			string title, 
+			string genre, 
+			TimeSpan duration, 
+			string instructor, 
+			DateTime premierDate)
+        {
+			this.title = title;
+			this.genre = genre;
+			this.duration = duration;
+			this.instructor = instructor;
+			this.premierDate = premierDate;
+
+
+		}
 		public void Parse(string line)
         {
-            string[] data = line.Split(';');
-            Title = data[0];
-            Instructor = data[1];
-            SocialSecurityNumber = int.Parse(data[2]);
-            PhoneNumber = int.Parse(data[3]);
-            Address = data[4];
-            AccountNumber = int.Parse(data[5]);
+            
         }
 
 		public string Format()

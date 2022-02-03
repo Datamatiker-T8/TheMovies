@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace TheMovies.ViewModels
 {
-    public class Show
+    public class MoviesViewModel
     {
+
     }
 }

@@ -15,7 +15,7 @@ namespace TheMovies.Models
             get { return name; }
             set { name = value; }
         }
-        public void Cinema(string Name)
+        public Cinema(string Name)
         {
             this.Name = Name;
         }
