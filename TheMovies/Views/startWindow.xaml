@@ -10,7 +10,7 @@
 
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="/Views/Forside.png" Stretch="Fill"/>
+            <ImageBrush ImageSource="./images/forside.png" Stretch="Fill"/>
         </Grid.Background>
     </Grid>
 </Page>

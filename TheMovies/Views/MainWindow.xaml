@@ -21,7 +21,7 @@
         </Grid.ColumnDefinitions>
 
         <Grid Grid.ColumnSpan="2" Background="#ffffff">
-            <Image Height="70" Width="350" Source="/Views/logo.png" MouseDown="Image_MouseDown"/>
+            <Image Height="70" Width="350" Source="images/logo.png" MouseDown="Image_MouseDown"/>
         </Grid>
 
         <StackPanel Grid.Row="2" Background="#FF515151">

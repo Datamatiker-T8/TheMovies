@@ -7,17 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Views\Forside.png" />
-    <None Remove="Views\Images\popcorn.jpg" />
-    <None Remove="Views\logo.png" />
-    <None Remove="Views\popcorn.jpg" />
+    <None Remove="Views\images\forside.png" />
+    <None Remove="Views\images\logo.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Views\Forside.png" />
-    <Resource Include="Views\Images\popcorn.jpg" />
-    <Resource Include="Views\logo.png" />
-    <Resource Include="Views\popcorn.jpg" />
+    <Resource Include="Views\images\forside.png" />
+    <Resource Include="Views\images\logo.png" />
   </ItemGroup>
 
 </Project>
