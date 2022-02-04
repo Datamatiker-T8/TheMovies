@@ -15,14 +15,24 @@ namespace TheMovies.Domain
             get { return bookingEmail; }
             set { bookingEmail = value; }
         }
-        private int bookingPhoneNumber;
+        private string bookingPhoneNumber;
 
-        public int BookingPhoneNumber
+        public string BookingPhoneNumber
         {
             get { return bookingPhoneNumber; }
             set { bookingPhoneNumber = value; }
         }
-        public Booking (string bookingEmail, int bookingPhoneNumber)
+
+        private Show ShowForBooking;
+
+        public Show showForBooking
+        {
+            get { return ShowForBooking; }
+            set { ShowForBooking = value; }
+        }
+
+
+        public Booking (string bookingEmail, string bookingPhoneNumber)
         {
             this.BookingPhoneNumber = bookingPhoneNumber;
             this.bookingEmail = bookingEmail;
