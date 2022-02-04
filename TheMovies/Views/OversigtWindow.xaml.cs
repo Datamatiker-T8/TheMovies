@@ -24,5 +24,15 @@ namespace TheMovies.Views
         {
             InitializeComponent();
         }
+
+        private void AddMovie_Click(object sender, RoutedEventArgs e)
+        {
+            AddMovie AddMovie = new AddMovie();
+
+            if (AddMovie.ShowDialog() == true)
+            {
+
+            }
+        }
     }
 }

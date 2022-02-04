@@ -1,0 +1,26 @@
+﻿<Window x:Class="TheMovies.Views.AddMovie"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TheMovies.Views"
+        mc:Ignorable="d"
+        Title="AddMovie" Height="500" Width="470"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Filmtitel" HorizontalAlignment="Left" Margin="27,40,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <TextBox x:Name="MovieTitle_box" HorizontalAlignment="Left" Margin="140,43,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="298" Height="23" FontSize="15"/>
+        <Label Content="Filmgenre" HorizontalAlignment="Left" Margin="27,101,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <TextBox x:Name="MovieGenre_box" HorizontalAlignment="Left" Margin="140,104,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="298" Height="23" FontSize="15"/>
+        <Label Content="Filmvarighed" HorizontalAlignment="Left" Margin="27,163,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <TextBox x:Name="MovieDuration_box" HorizontalAlignment="Left" Margin="140,166,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="298" Height="23" FontSize="15"/>
+        <Label Content="Filminstruktør" HorizontalAlignment="Left" Margin="27,224,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <TextBox x:Name="MovieDirector_box" HorizontalAlignment="Left" Margin="140,227,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="298" Height="23" FontSize="15"/>
+        <Label Content="Premieredato" HorizontalAlignment="Left" Margin="27,283,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <TextBox x:Name="MoviePremier_box" HorizontalAlignment="Left" Margin="140,286,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="298" Height="23" FontSize="15"/>
+        <Button x:Name="OK_btn" Content="OK" HorizontalAlignment="Left" Margin="66,366,0,0" VerticalAlignment="Top" Height="40" Width="137" Style="{DynamicResource ButtonTheme2}" Click="OK_btn_Click"/>
+        <Button x:Name="Cancel_btn" Content="Fortryd" HorizontalAlignment="Left" Margin="258,366,0,0" VerticalAlignment="Top" Height="40" Width="137" Style="{DynamicResource ButtonTheme2}" Click="Cancel_btn_Click"/>
+
+    </Grid>
+</Window>
