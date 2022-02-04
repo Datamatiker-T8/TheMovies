@@ -23,7 +23,7 @@ namespace TheMovies.Views
         public string MovieGenre { get; set; }
         public string MovieDuration { get; set; }
         public string MovieDirector { get; set; }
-        public string MoviePremierDate { get; set; }
+        public DateTime MoviePremierDate { get; set; }
 
         public AddMovie()
         {
@@ -36,7 +36,7 @@ namespace TheMovies.Views
             MovieGenre = MovieGenre_box.Text;
             MovieDuration = MovieDuration_box.Text;
             MovieDirector = MovieDirector_box.Text;
-            MoviePremierDate = MoviePremier_box.Text;
+            MoviePremierDate = MoviePremier_box.SelectedDate.Value;
             DialogResult = true;
         }
 

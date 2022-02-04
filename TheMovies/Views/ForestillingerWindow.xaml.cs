@@ -30,7 +30,7 @@ namespace TheMovies.Views
             AddShow addShow = new AddShow();
             if (addShow.ShowDialog() == true)
             {
-
+                
             }
         }
     }

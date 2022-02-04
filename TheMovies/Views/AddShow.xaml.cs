@@ -22,7 +22,7 @@ namespace TheMovies.Views
         public string SelectedMovie { get; set; }
         public string Cinema { get; set; }
         public string City { get; set; }
-        public string Showtime { get; set; }
+        public DateTime Showtime { get; set; }
 
 
         public AddShow()
@@ -34,7 +34,7 @@ namespace TheMovies.Views
             SelectedMovie = Movie_combobox.Text;
             Cinema = Cinema_box.Text;
             City = City_box.Text;
-            Showtime = Showtime_box.Text;
+            Showtime = Showtime_box.SelectedDate.Value;
             DialogResult = true;
         }
 

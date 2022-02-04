@@ -18,9 +18,9 @@
         <Label Content="Filminstruktør" HorizontalAlignment="Left" Margin="27,224,0,0" VerticalAlignment="Top" FontSize="15"/>
         <TextBox x:Name="MovieDirector_box" HorizontalAlignment="Left" Margin="140,227,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="298" Height="23" FontSize="15"/>
         <Label Content="Premieredato" HorizontalAlignment="Left" Margin="27,283,0,0" VerticalAlignment="Top" FontSize="15"/>
-        <TextBox x:Name="MoviePremier_box" HorizontalAlignment="Left" Margin="140,286,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="298" Height="23" FontSize="15"/>
         <Button x:Name="OK_btn" Content="OK" HorizontalAlignment="Left" Margin="66,366,0,0" VerticalAlignment="Top" Height="40" Width="137" Style="{DynamicResource ButtonTheme2}" Click="OK_btn_Click"/>
         <Button x:Name="Cancel_btn" Content="Fortryd" HorizontalAlignment="Left" Margin="258,366,0,0" VerticalAlignment="Top" Height="40" Width="137" Style="{DynamicResource ButtonTheme2}" Click="Cancel_btn_Click"/>
+        <DatePicker x:Name="MoviePremier_box" HorizontalAlignment="Left" Margin="140,284,0,0" VerticalAlignment="Top" Width="298" Height="27"/>
 
     </Grid>
 </Window>
