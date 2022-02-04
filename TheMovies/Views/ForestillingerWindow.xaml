@@ -9,8 +9,8 @@
       Title="ForestillingerWindow">
 
     <Grid Background="#ffffff">
-        <Button Content="Ny Forestilling" HorizontalAlignment="Left" Margin="312,504,0,0" VerticalAlignment="Top" Height="75" Width="158" Style="{DynamicResource ButtonTheme2}"/>
-        <Button Content="Aflys Forestilling" HorizontalAlignment="Left" Margin="720,504,0,0" VerticalAlignment="Top" Height="75" Width="158" Style="{DynamicResource ButtonTheme2}"/>
+        <Button x:Name="AddShow_btn" Content="Ny Forestilling" HorizontalAlignment="Left" Margin="288,490,0,0" VerticalAlignment="Top" Height="75" Width="158" Style="{DynamicResource ButtonTheme2}" Click="AddShow_btn_Click"/>
+        <Button Content="Aflys Forestilling" HorizontalAlignment="Left" Margin="710,490,0,0" VerticalAlignment="Top" Height="75" Width="158" Style="{DynamicResource ButtonTheme2}"/>
         <DataGrid Margin="155,66,132,181">
             <DataGrid.Columns>
                 <DataGridTextColumn Width="215" Header="Film"/>
