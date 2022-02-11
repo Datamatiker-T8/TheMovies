@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TheMovies.Models
+namespace TheMovies.ViewModels
 {
-    public class MovieRepo
+    public class MoviesViewModel
     {
+
     }
 }
