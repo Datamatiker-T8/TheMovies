@@ -34,7 +34,7 @@ namespace TheMovies.Views
 
             if (AddMovie.ShowDialog() == true)
             {
-                mvm.AddMovie(AddMovie.MovieTitle, AddMovie.MovieDuration, AddMovie.MovieDirector, AddMovie.MoviePremierDate);
+                mvm.AddMovie(AddMovie.MovieTitle, AddMovie.MovieGenre, AddMovie.MovieDuration, AddMovie.MovieDirector, AddMovie.MoviePremierDate);
             }
         }
     }

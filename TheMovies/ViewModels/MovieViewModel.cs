@@ -11,9 +11,9 @@ namespace TheMovies.ViewModels
     public class MovieViewModel
     {
         MovieRepository movieRepo = new MovieRepository();
-        public void AddMovie(string title, double duration, string director, DateTime premierDate)
+        public void AddMovie(string title, string genre, double duration, string director, DateTime premierDate)
         {
-            movieRepo.Create(title, duration, director, premierDate);
+            movieRepo.Create(title, genre, duration, director, premierDate);
         }
     }
 }
