@@ -12,6 +12,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Views\images\forside.png" />
     <Resource Include="Views\images\logo.png" />
   </ItemGroup>

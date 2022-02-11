@@ -8,21 +8,11 @@ namespace TheMovies.Domain
 {
     public class Show
     {
-        private DateTime showTime;
-        public DateTime ShowTime
+        public DateTime ShowTime { get; set; }
+
+        public Show(DateTime showTime)
         {
-            get { return showTime; }
-            set { showTime = value; }
+            this.ShowTime = showTime;
         }
-
-        public Movie ShowThisMovie { get; set; }
-        public Cinema InThisCinama { get; set; }
-
-        public Show(DateTime Showtime)
-        {
-            showTime = Showtime;
-
-        }
-
     }
 }

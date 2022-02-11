@@ -8,36 +8,13 @@ namespace TheMovies.Domain
 {
     public class Booking
     {
-        private string bookingEmail;
+        public string Mail { get; set; }
+        public string Phonenumber { get; set; }
 
-        public string BookingEmail
+        public Booking(string mail, string phonenumber)
         {
-            get { return bookingEmail; }
-            set { bookingEmail = value; }
+            this.Mail = mail;
+            this.Phonenumber = phonenumber;
         }
-        private string bookingPhoneNumber;
-
-        public string BookingPhoneNumber
-        {
-            get { return bookingPhoneNumber; }
-            set { bookingPhoneNumber = value; }
-        }
-
-        private Show ShowForBooking;
-
-        public Show showForBooking
-        {
-            get { return ShowForBooking; }
-            set { ShowForBooking = value; }
-        }
-
-
-        public Booking (string bookingEmail, string bookingPhoneNumber)
-        {
-            this.BookingPhoneNumber = bookingPhoneNumber;
-            this.bookingEmail = bookingEmail;
-        }
-
-
     }
 }
