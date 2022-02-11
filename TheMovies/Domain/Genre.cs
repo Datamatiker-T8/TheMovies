@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace TheMovies.Domain
 {
-    public class City
+    public class Genre
     {
         public string Name { get; set; }
 
-        public City(string name)
+        public Genre(string name)
         {
             this.Name = name;
         }

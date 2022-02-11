@@ -8,17 +8,11 @@ namespace TheMovies.Domain
 {
     public class Cinema
     {
-        private string name;
+        public string Name { get; set; }
 
-        public string Name
+        public Cinema(string name)
         {
-            get { return name; }
-            set { name = value; }
+            this.Name = name;
         }
-        public Cinema(string Name)
-        {
-            this.Name = Name;
-        }
-
     }
 }

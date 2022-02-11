@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TheMovies.ViewModels;
 
 namespace TheMovies.Views
 {
@@ -20,6 +21,8 @@ namespace TheMovies.Views
     /// </summary>
     public partial class OversigtWindow : Page
     {
+        MovieViewModel mvm = new MovieViewModel();
+
         public OversigtWindow()
         {
             InitializeComponent();
@@ -31,7 +34,7 @@ namespace TheMovies.Views
 
             if (AddMovie.ShowDialog() == true)
             {
-
+                mvm.AddMovie(AddMovie.MovieTitle, AddMovie.MovieDuration, AddMovie.MovieDirector, AddMovie.MoviePremierDate);
             }
         }
     }
