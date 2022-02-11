@@ -15,11 +15,12 @@ namespace TheMovies.Domain
         public string Director { get; set; }
         public DateTime PremierDate { get; set; }
 
-        public Movie(string title, double duration, string director, DateTime premierDate)
+        public Movie(string title, string genre, double duration, string director, DateTime premierDate)
         {
             this.Title = title;
+            this.Genre = genre;
             this.Duration = duration;
-            this.Director = Director;
+            this.Director = director;
             this.PremierDate = premierDate;
         }
 

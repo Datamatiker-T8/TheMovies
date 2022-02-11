@@ -26,6 +26,7 @@ namespace TheMovies.Views
         public OversigtWindow()
         {
             InitializeComponent();
+            DataContext = mvm;
         }
 
         private void AddMovie_Click(object sender, RoutedEventArgs e)

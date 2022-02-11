@@ -11,13 +11,13 @@
     <Grid Background="#ffffff">
         <Button x:Name="AddMovie" Content="Opret film" HorizontalAlignment="Left" Margin="288,490,0,0" VerticalAlignment="Top" Height="75" Width="158" Style="{DynamicResource ButtonTheme2}" Click="AddMovie_Click"/>
         <Button x:Name="RemoveMovie" Content="Fjern film" HorizontalAlignment="Left" Margin="710,490,0,0" VerticalAlignment="Top" Height="75" Width="158" Style="{DynamicResource ButtonTheme2}"/>
-        <DataGrid Margin="155,66,132,181">
+        <DataGrid Margin="155,66,132,181" ItemsSource="{Binding MovieVM}" AutoGenerateColumns="false">
             <DataGrid.Columns>
-                <DataGridTextColumn Width="176" Header="Filmtitel"/>
-                <DataGridTextColumn Width="176" Header="Filmgenre"/>
-                <DataGridTextColumn Width="176" Header="Filmvarighed"/>
-                <DataGridTextColumn Width="176" Header="Filminstruktør"/>
-                <DataGridTextColumn Width="176" Header="Premieredato"/>
+                <DataGridTextColumn Width="176" Header="Filmtitel" Binding="{Binding Title}"/>
+                <DataGridTextColumn Width="176" Header="Filmgenre" Binding="{Binding Genre}"/>
+                <DataGridTextColumn Width="176" Header="Filmvarighed" Binding="{Binding Duration}"/>
+                <DataGridTextColumn Width="176" Header="Filminstruktør" Binding="{Binding Director}"/>
+                <DataGridTextColumn Width="176" Header="Premieredato" Binding="{Binding PremierDate}"/>
             </DataGrid.Columns>
         </DataGrid>
 
